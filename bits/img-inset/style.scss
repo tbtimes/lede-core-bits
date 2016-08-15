@@ -1,3 +1,5 @@
+// @import "core/bootstrap-modified";
+
 $imgwidth: 75%;
 $imgmargin: -25%;
 $imgposition: 50%;
@@ -65,7 +67,8 @@ figure {
   }
 }
 @media screen and (min-width: 0) and (max-width: 660px) {
-  $imgwidth: calc(100% + 20px);
+  // $imgwidth: calc(100% + 20px);
+  $imgwidth: 100%;
   $imgmargin: 0;
   figure {
     margin-left: 0;
@@ -74,7 +77,9 @@ figure {
   .image-left {
     width: $imgwidth;
     float: none;
-    margin-left: -10px;
+    margin-left: 0;
+    margin-right: 0;
+    // margin-left: -10px;
     & figcaption {
       padding-left: 0;
       padding-right: 0;
@@ -87,8 +92,8 @@ figure {
     float: none;
     margin-left: 0;
     margin-right: 0;
-    margin-left: -10px;
-    margin-right: -10px;
+    // margin-left: -10px;
+    // margin-right: -10px;
     & figcaption {
       padding-left: 0;
       padding-right: 0;
