@@ -10,15 +10,15 @@
       <figure class="{% if each.class %}{{ each.class }}{% endif %}">
         <img {% if each.alt %} alt="{{ each.alt }}" {% endif %}
           {% if each.directsrc %} src="{{ each.directsrc }}"{% else %}
-          src="//s3.amazonaws.com/ledejs/resized/{{ $projectName }}/1024/{{ each.src }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %}" srcset="
-          //s3.amazonaws.com/ledejs/resized/{{ $projectName }}/480/{{ each.src }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 480w,
-          //s3.amazonaws.com/ledejs/resized/{{ $projectName }}/480/{{ each.src }}-2x.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 960w,
-          //s3.amazonaws.com/ledejs/resized/{{ $projectName }}/600/{{ each.src }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 600w,
-          //s3.amazonaws.com/ledejs/resized/{{ $projectName }}/1024/{{ each.src }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 1024w,
-          //s3.amazonaws.com/ledejs/resized/{{ $projectName }}/600/{{ each.src }}-2x.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 1200w,
-          //s3.amazonaws.com/ledejs/resized/{{ $projectName }}/1500/{{ each.src }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 1500w,
-          //s3.amazonaws.com/ledejs/resized/{{ $projectName }}/1024/{{ each.src }}-2x.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 2048w,
-          //s3.amazonaws.com/ledejs/resized/{{ $projectName }}/1500/{{ each.src }}-2x.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 3000w
+          src="//s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/1024/{{ each.src | urlencode }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %}" srcset="
+          //s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/480/{{ each.src | urlencode }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 480w,
+          //s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/480/{{ each.src | urlencode }}-2x.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 960w,
+          //s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/600/{{ each.src | urlencode }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 600w,
+          //s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/1024/{{ each.src | urlencode }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 1024w,
+          //s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/600/{{ each.src | urlencode }}-2x.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 1200w,
+          //s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/1500/{{ each.src | urlencode }}.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 1500w,
+          //s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/1024/{{ each.src | urlencode }}-2x.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 2048w,
+          //s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/1500/{{ each.src | urlencode }}-2x.{% if each.imgtype %}{{ each.imgtype }}{% else %}jpg{% endif %} 3000w
         " sizes="
           (max-width: 479px) 480px,
           (min-width: 480px) and (max-width: 599px) 600px,
