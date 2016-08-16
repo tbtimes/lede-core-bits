@@ -125,6 +125,13 @@ figcaption {
   }
 }
 
+.fs.contain {
+  .image {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .fs {
     width: 1000px;
