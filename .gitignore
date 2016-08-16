@@ -38,4 +38,5 @@ Thumbs.db
 
 # Lede files #
 ######################
-.ledeCache/*
+.ledeCache
+node_modules
