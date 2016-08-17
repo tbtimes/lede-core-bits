@@ -6,12 +6,12 @@
   <div class="header-social" id="componentDivHeader_gig_containerParent">
     <script type="text/javascript">
     var act = new gigya.socialize.UserAction();
-    act.setTitle("Wild ride across Florida: 800 miles, alone on a bike");
-    act.setLinkBack("http://www.tampabay.com/projects/2015/features/one-wild-ride/");
+    act.setTitle("{{ seo.title }}");
+    act.setLinkBack("{{ seo.url }}");
     act.addMediaItem({
       type: 'image',
-      src: 'http://www.tampabay.com/projects/2015/features/one-wild-ride/img/1500/SP_393926_PEND_flo_bike0705.jpg',
-      href: 'http://www.tampabay.com/projects/2015/features/one-wild-ride/'
+      src: '{{ seo.image }}',
+      href: '{{ seo.url }}'
     });
     var showShareBarUI_params = {
       containerID: 'componentDivHeader',
