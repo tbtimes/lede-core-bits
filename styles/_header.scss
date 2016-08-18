@@ -35,7 +35,7 @@ header {
   }
   // @media screen and (min-width: $screen-sm-min) {
   @include media-breakpoint-up(md) {
-    // top: 14px;
+    top: 14px;
     img {
       margin: 0 5px;
     }
