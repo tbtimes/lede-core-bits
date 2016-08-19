@@ -14,6 +14,11 @@ figure {
     height: auto;
   }
 }
+.image-small {
+  width: $imgwidthsmall;
+  margin-left: auto;
+  margin-right: auto;
+}
 .image-left {
   width: $imgwidth;
   float: left;
@@ -31,11 +36,6 @@ figure {
   &.image-small {
     width: $imgwidthsmall;
   }
-}
-.image-small {
-  width: $imgwidthsmall;
-  margin-left: auto;
-  margin-right: auto;
 }
 .inset-fullscreen {
   position: absolute;
