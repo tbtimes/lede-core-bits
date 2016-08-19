@@ -32,6 +32,11 @@ figure {
     width: $imgwidthsmall;
   }
 }
+.image-small {
+  width: $imgwidthsmall;
+  margin-left: auto;
+  margin-right: auto;
+}
 .inset-fullscreen {
   position: absolute;
   top: 0;
@@ -59,6 +64,9 @@ figure {
 @media screen and (min-width: 661px) and (max-width: 849px) {
   $imgwidth: 100%;
   $imgwidthsmall: 70%;
+  .image-small {
+    width: $imgwidthsmall;
+  }
   .image-left {
     width: $imgwidth;
     margin-left: 0;
@@ -89,6 +97,9 @@ figure {
   $imgwidth: 100%;
   $imgmargin: 0;
   $imgwidthsmall: 80%;
+  .image-small {
+    width: $imgwidthsmall;
+  }
   figure {
     margin-left: 0;
     margin-right: 0;
