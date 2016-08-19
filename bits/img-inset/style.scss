@@ -1,9 +1,10 @@
-// @import "core/bootstrap-modified";
 
 $imgwidth: 75%;
 $imgmargin: -25%;
 $imgposition: 50%;
 $textmargin: 30px;
+$imgwidthsmall: 60%;
+
 figure {
   margin-left: 0;
   margin-right: 0;
@@ -18,12 +19,18 @@ figure {
   float: left;
   margin-left: $imgmargin;
   margin-right: $textmargin;
+  &.image-small {
+    width: $imgwidthsmall;
+  }
 }
 .image-right {
   width: $imgwidth;
   float: right;
   margin-right: $imgmargin;
   margin-left: $textmargin;
+  &.image-small {
+    width: $imgwidthsmall;
+  }
 }
 .inset-fullscreen {
   position: absolute;
@@ -51,12 +58,18 @@ figure {
 }
 @media screen and (min-width: 661px) and (max-width: 849px) {
   $imgwidth: 100%;
+  $imgwidthsmall: 70%;
   .image-left {
     width: $imgwidth;
     margin-left: 0;
     margin-right: 0;
     float: none;
     left: 0;
+    &.image-small {
+      margin-left: auto;
+      margin-right: auto;
+      width: $imgwidthsmall;
+    }
   }
   .image-right {
     width: $imgwidth;
@@ -64,12 +77,18 @@ figure {
     margin-left: 0;
     float: none;
     left: 0;
+    &.image-small {
+      margin-left: auto;
+      margin-right: auto;
+      width: $imgwidthsmall;
+    }
   }
 }
 @media screen and (min-width: 0) and (max-width: 660px) {
   // $imgwidth: calc(100% + 20px);
   $imgwidth: 100%;
   $imgmargin: 0;
+  $imgwidthsmall: 80%;
   figure {
     margin-left: 0;
     margin-right: 0;
@@ -80,6 +99,11 @@ figure {
     margin-left: 0;
     margin-right: 0;
     // margin-left: -10px;
+    &.image-small {
+      margin-left: auto;
+      margin-right: auto;
+      width: $imgwidthsmall;
+    }
     & figcaption {
       padding-left: 0;
       padding-right: 0;
@@ -94,6 +118,11 @@ figure {
     margin-right: 0;
     // margin-left: -10px;
     // margin-right: -10px;
+    &.image-small {
+      margin-left: auto;
+      margin-right: auto;
+      width: $imgwidthsmall;
+    }
     & figcaption {
       padding-left: 0;
       padding-right: 0;
