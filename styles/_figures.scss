@@ -134,7 +134,13 @@ figcaption {
     background-position: 50% 10%;
   }
 }
-
+.touchevents {
+  .fs {
+    .image {
+      background-attachment: scroll;
+    }
+  }
+}
 @media screen and (min-width: 992px) {
   .fs {
     width: 1000px;
