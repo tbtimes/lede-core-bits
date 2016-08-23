@@ -45,6 +45,9 @@ $accentcolor: $brickred;
 		text-decoration: none; border-color: #ddd;
 	}
 }
+.btn {
+  font-family: 'open sans', sans-serif;
+}
 
 @mixin title-gradient() {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e1e1e+0,1e1e1e+100&0+0,0.6+30,0.6+70,0+100 */
