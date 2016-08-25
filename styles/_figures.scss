@@ -110,7 +110,7 @@ figcaption {
       }
     }
     &.textbackground {
-      background-color: rgba(0, 0, 0, .3);
+      // background-color: rgba(0, 0, 0, .3);
       @include title-gradient();
       &.top {
         @include title-gradient-top();
