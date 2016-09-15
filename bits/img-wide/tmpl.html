@@ -1,5 +1,5 @@
 <div class="fs">
-  <figure class="{% if bit.class %}{{ bit.class }}{% endif %}">
+  <figure{% if bit.class %} class="{{ bit.class }}"{% endif %}>
     <img {% if bit.alt %} alt="{{ bit.alt }}" {% endif %}
       {% if bit.directsrc %} src="{{ bit.directsrc }}"{% else %}
       src="//s3.amazonaws.com/ledejs/resized/{{ $projectName | urlencode }}/1024/{{ bit.src | urlencode }}.{% if bit.imgtype %}{{ bit.imgtype }}{% else %}jpg{% endif %}" srcset="
