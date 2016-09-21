@@ -169,4 +169,7 @@ figcaption {
   .fixedimg-subhed { display: none!important; }
   .mobile-only { display: block!important; }
 }
-
+// add space between last p and top of fullscreen image
+p+.fs {
+  margin-top: 3em;
+}
