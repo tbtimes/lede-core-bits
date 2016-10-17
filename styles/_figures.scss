@@ -46,8 +46,8 @@ figcaption {
     }
   }
   .image {
-    // height: 85vh;
-    @include vh-fix;
+    height: 85vh;
+    // @include vh-fix; // part of ill-fated reworking of this bit that got pushed aside when I got swamped
     background-attachment: fixed;
     background-position: 50% 50%;
     position: relative;
