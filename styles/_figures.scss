@@ -21,10 +21,10 @@ figcaption {
     position: absolute;
     color: white;
     letter-spacing: -.12em;
-    h1 {
+    h1, .h1 {
       font-size: calc(3vw * 1 + 30px);
     }
-    h2 {
+    h2, .h2 {
       font-size: calc(1.5vw * 1 + 30px);
     }
   }
@@ -81,16 +81,16 @@ figcaption {
       left: auto;
       right: 0;
     }
-      h1, h2, p {
+      h1, h2, p, .h1, .h2 {
       margin: .2em 0;
       letter-spacing: -0.02em;
       // text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     }
-    h1 {
+    h1, .h1 {
       font-size: 48px;
       font-size: calc(3vw * 1 + 27px);
     }
-    h2 {
+    h2, .h2 {
       font-size: 30px;
       font-size: calc(1.5vw * 1 + 27px);
     }
