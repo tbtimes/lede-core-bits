@@ -26,12 +26,14 @@ h1 {
   margin-bottom: 0.4em;
 }
 h2 {
+  @media screen and (min-width: 544px) {
+    font-size: 3em;
+  }
   &.chapter {
     margin-top: -70px;
     padding-top: 70px;
   }
   &.big {
-    font-size: 3em;
     text-align: center;
     padding-top: 10vh;
   }
