@@ -21,13 +21,13 @@ body, body * {
   box-sizing: border-box;
 }
 h1 {
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0.4em;
 }
 h2 {
   @media screen and (min-width: 544px) {
-    font-size: 3em;
+    font-size: 3rem;
   }
   &.chapter {
     margin-top: -70px;
@@ -39,7 +39,7 @@ h2 {
   }
 }
 h2.big {
-  font-size: 3em;
+  font-size: 3rem;
   text-align: center;
   padding-top: 10vh;
 }
