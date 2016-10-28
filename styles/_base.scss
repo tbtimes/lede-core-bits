@@ -95,6 +95,12 @@ article {
   top: 20;
   right: 20;
 }
+ul {
+  padding-left: 1.7em;
+  &.square {
+    list-style-type: square;
+  }
+}
 p, li, blockquote {
   // @include georgia();
   // font-family: $font-family-serif;
